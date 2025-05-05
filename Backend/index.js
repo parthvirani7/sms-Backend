@@ -23,7 +23,7 @@ app.use(routes);
 dotenv.config({
   path: ".env",
 });
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 connectDB();
 server.listen(PORT, () => {
   console.log(`server listening on http://localhost:${PORT}`);
